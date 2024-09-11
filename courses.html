@@ -1,0 +1,511 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/homestyle.css" />
+ </head>
+ <body class="bg-white font-sans">
+    <navigation>
+        <div class="left">
+          <div class="logo">
+            <img src="assests/logo.png" />
+          </div>
+          <div class="links">
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="#">Articles</a>
+            <a href="#">Podcasts</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <div class="buttons">
+            <a href="#"><i class="bx bx-support"></i></a>
+            <a href="basket.html"><i class="bx bx-basket"></i></a>
+            <a href="login.html"><i class="bx bx-user"></i></a>
+        </div>
+    </navigation>
+  <div class="container mx-auto p-4">
+   <div class="flex justify-between items-center mb-4">
+    <div class="flex items-center space-x-2">
+     <button class="border border-gray-300 px-4 py-2 rounded-md flex items-center">
+      <i class="fas fa-filter mr-2">
+      </i>
+      Filter
+     </button>
+     <div class="relative">
+      <button class="border border-gray-300 px-4 py-2 rounded-md flex items-center">
+       Sort by
+       <i class="fas fa-chevron-down ml-2">
+       </i>
+      </button>
+      <div class="absolute mt-2 w-full bg-white border border-gray-300 rounded-md shadow-lg hidden">
+       <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+        Most Popular
+       </a>
+       <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+        Highest Rated
+       </a>
+       <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+        Newest
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="text-gray-500">
+     All Courses
+    </div>
+   </div>
+   <div class="flex">
+    <div class="w-1/4 pr-4">
+     <div class="mb-4">
+      <h2 class="font-bold text-lg mb-2">
+       Ratings
+      </h2>
+      <div class="space-y-2">
+       <label class="flex items-center">
+        <input class="mr-2" name="rating" type="radio"/>
+        <span class="flex items-center">
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star-half-alt text-yellow-500">
+         </i>
+         <span class="ml-2 text-gray-700">
+          4.5 &amp; up (10,000)
+         </span>
+        </span>
+       </label>
+       <label class="flex items-center">
+        <input class="mr-2" name="rating" type="radio"/>
+        <span class="flex items-center">
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <span class="ml-2 text-gray-700">
+          4.0 &amp; up (10,000)
+         </span>
+        </span>
+       </label>
+       <label class="flex items-center">
+        <input class="mr-2" name="rating" type="radio"/>
+        <span class="flex items-center">
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star-half-alt text-yellow-500">
+         </i>
+         <span class="ml-2 text-gray-700">
+          3.5 &amp; up (10,000)
+         </span>
+        </span>
+       </label>
+       <label class="flex items-center">
+        <input class="mr-2" name="rating" type="radio"/>
+        <span class="flex items-center">
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <i class="fas fa-star text-yellow-500">
+         </i>
+         <span class="ml-2 text-gray-700">
+          3.0 &amp; up (10,000)
+         </span>
+        </span>
+       </label>
+      </div>
+     </div>
+     <div class="mb-4">
+      <h2 class="font-bold text-lg mb-2">
+       Video Duration
+      </h2>
+      <div class="space-y-2">
+       <label class="flex items-center">
+        <input class="mr-2" type="checkbox"/>
+        <span class="text-gray-700">
+         0-1 Hour (10,000)
+        </span>
+       </label>
+       <label class="flex items-center">
+        <input class="mr-2" type="checkbox"/>
+        <span class="text-gray-700">
+         1-3 Hours (10,000)
+        </span>
+       </label>
+       <label class="flex items-center">
+        <input class="mr-2" type="checkbox"/>
+        <span class="text-gray-700">
+         3-6 Hours (7,605)
+        </span>
+       </label>
+       <label class="flex items-center">
+        <input class="mr-2" type="checkbox"/>
+        <span class="text-gray-700">
+         6-17 Hours (7,573)
+        </span>
+       </label>
+      </div>
+
+     </div>
+     <!-- <div class="mb-4">
+      <h2 class="font-bold text-lg mb-2">
+       Topic
+      </h2>
+     </div>
+     <div class="mb-4">
+      <h2 class="font-bold text-lg mb-2">
+       Subcategory
+      </h2>
+     </div> -->
+    </div>
+    <div class="w-3/4">
+     <div class="border-b border-gray-300 pb-4 mb-4">
+      <div class="flex items-center">
+       <img alt="Course image" class="w-24 h-24 object-cover rounded-md mr-4" height="100" src="assests/course-1.jpg" width="100"/>
+       <div class="flex-1">
+        <h3 class="font-bold text-lg"><a href="preview-1.html">
+            Learn Calculus With Assignments
+        </a></h3>
+        <p class="text-gray-600">
+         Full Practice Exam | 
+        </p>
+        <p class="text-gray-600">
+         Chirayush Verma | PhD in Mathematics, MIT
+        </p>
+        <div class="flex items-center text-yellow-500">
+         <span class="font-bold text-lg">
+          4.7
+         </span>
+         <i class="fas fa-star ml-1">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span class="text-gray-600 ml-2">
+          (233,633)
+         </span>
+        </div>
+        <p class="text-gray-600">
+         27.5 total hours • 395 lectures • All Levels
+        </p>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded-md text-sm">
+         Bestseller
+        </span>
+       </div>
+       <div class="text-right">
+        <div class="text-lg font-bold text-gray-900">
+         $40
+        </div>
+        <div class="text-sm text-gray-500 line-through">
+         $120
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="border-b border-gray-300 pb-4 mb-4">
+      <div class="flex items-center">
+       <img alt="Course image" class="w-24 h-24 object-cover rounded-md mr-4" height="100" src="assests/course-2.jpg" width="100"/>
+       <div class="flex-1">
+        <h3 class="font-bold text-lg"><a href="preview-2.html">
+            Learn Algebra with Assignments
+        </a></h3>
+        <p class="text-gray-600">
+         Full Practice Exam included + explanations
+        </p>
+        <p class="text-gray-600">
+            Sakshi Mishra |  PhD in Mathematics, Harvard University
+        </p>
+        <div class="flex items-center text-yellow-500">
+         <span class="font-bold text-lg">
+          4.7
+         </span>
+         <i class="fas fa-star ml-1">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span class="text-gray-600 ml-2">
+          (218,636)
+         </span>
+        </div>
+        <p class="text-gray-600">
+         15 total hours • 282 lectures • Beginner
+        </p>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded-md text-sm">
+         Bestseller
+        </span>
+       </div>
+       <div class="text-right">
+        <div class="text-lg font-bold text-gray-900">
+         ₹499
+        </div>
+        <div class="text-sm text-gray-500 line-through">
+         ₹3,099
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="border-b border-gray-300 pb-4 mb-4">
+      <div class="flex items-center">
+       <img alt="Course image" class="w-24 h-24 object-cover rounded-md mr-4" height="100" src="assests/course-3.jpg" width="100"/>
+       <div class="flex-1">
+        <h3 class="font-bold text-lg"><a href="preview-3.html">
+            Learn Martial Arts
+        </a></h3>
+        <p class="text-gray-600">
+         Become a Martial Arts Expert 
+        </p>
+        <p class="text-gray-600">
+         Devansh Manchanda, Black Belt, CobraKai
+        </p>
+        <div class="flex items-center text-yellow-500">
+         <span class="font-bold text-lg">
+          4.6
+         </span>
+         <i class="fas fa-star ml-1">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <span class="text-gray-600 ml-2">
+          (126,365)
+         </span>
+        </div>
+        <p class="text-gray-600">
+         15.5 total hours • 145 lectures • All Levels
+        </p>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded-md text-sm">
+         Bestseller
+        </span>
+       </div>
+       <div class="text-right">
+        <div class="text-lg font-bold text-gray-900">
+         ₹599
+        </div>
+        <div class="text-sm text-gray-500 line-through">
+         ₹3,699
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="border-b border-gray-300 pb-4 mb-4">
+      <div class="flex items-center">
+       <img alt="Course image" class="w-24 h-24 object-cover rounded-md mr-4" height="100" src="assests/course-4.jpg" width="100"/>
+       <div class="flex-1">
+        <h3 class="font-bold text-lg"><a href="preview-4.html">
+         Learn Bussiness Analytics
+        </a></h3>
+        <p class="text-gray-600">
+         Learn Bussiness principles and concepts
+        </p>
+        <p class="text-gray-600">
+         Ishaan Goel | MBA Wharton University
+        </p>
+        <div class="flex items-center text-yellow-500">
+         <span class="font-bold text-lg">
+          4.8
+         </span>
+         <i class="fas fa-star ml-1">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <span class="text-gray-600 ml-2">
+          (150,000)
+         </span>
+        </div>
+        <p class="text-gray-600">
+         30 total hours • 400 lectures • All Levels
+        </p>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded-md text-sm">
+         Bestseller
+        </span>
+       </div>
+       <div class="text-right">
+        <div class="text-lg font-bold text-gray-900">
+         ₹699
+        </div>
+        <div class="text-sm text-gray-500 line-through">
+         ₹4,099
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="border-b border-gray-300 pb-4 mb-4">
+      <div class="flex items-center">
+       <img alt="Course image" class="w-24 h-24 object-cover rounded-md mr-4" height="100" src="assests/course-5.jpg" width="100"/>
+       <div class="flex-1">
+        <h3 class="font-bold text-lg"><a href="preview-5.html">
+         Learn Computer Science with Projects
+        </a></h3>
+        <p class="text-gray-600">
+         Comprehensive bootcamp covering data science, machine learning, and AI. Includes projects and real-world applications.
+        </p>
+        <p class="text-gray-600">
+         Chirayush Verma | CTO @ CodeDiggers
+        </p>
+        <div class="flex items-center text-yellow-500">
+         <span class="font-bold text-lg">
+          4.9
+         </span>
+         <i class="fas fa-star ml-1">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <span class="text-gray-600 ml-2">
+          (200,000)
+         </span>
+        </div>
+        <p class="text-gray-600">
+         50 total hours • 600 lectures • All Levels
+        </p>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded-md text-sm">
+         Bestseller
+        </span>
+       </div>
+       <div class="text-right">
+        <div class="text-lg font-bold text-gray-900">
+         ₹999
+        </div>
+        <div class="text-sm text-gray-500 line-through">
+         ₹5,099
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="border-b border-gray-300 pb-4 mb-4">
+      <div class="flex items-center">
+       <img alt="Course image" class="w-24 h-24 object-cover rounded-md mr-4" height="100" src="assests/course-6.jpg" width="100"/>
+       <div class="flex-1">
+        <h3 class="font-bold text-lg"><a href="preview-6.html">
+         Learn Physics
+        </a></h3>
+        <p class="text-gray-600">
+         Delve into the fascinating world of physics and explore concepts like magnetism, electricity and newton's laws of motions
+        </p>
+        <p class="text-gray-600">
+         Devansh Manchanda | Physicsist | BARC
+        </p>
+        <div class="flex items-center text-yellow-500">
+         <span class="font-bold text-lg">
+          4.7
+         </span>
+         <i class="fas fa-star ml-1">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star-half-alt">
+         </i>
+         <span class="text-gray-600 ml-2">
+          (180,000)
+         </span>
+        </div>
+        <p class="text-gray-600">
+         40 total hours • 500 lectures • All Levels
+        </p>
+        <span class="bg-green-100 text-green-700 px-2 py-1 rounded-md text-sm">
+         Bestseller
+        </span>
+       </div>
+       <div class="text-right">
+        <div class="text-lg font-bold text-gray-900">
+         ₹799
+        </div>
+        <div class="text-sm text-gray-500 line-through">
+         ₹4,599
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer>
+    <div class="columns">
+      <div class="col">
+        <h5>Site Links</h5>
+        <a href="#">Articles</a>
+        <a href="#">Podcasts</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h5>Other Pages</h5>
+        <a href="#">404 Page</a>
+        <a href="login.html">Login|Register</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="col">
+        <h5>Collaboration</h5>
+        <a href="#">Work With Us</a>
+        <a href="#">Affiliate</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="col last">
+        <h5>About Us</h5>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ad
+          incidunt deleniti eligendi, vel quaerat a doloremque, quo id maiores
+          suscipit ex iste accusantium.
+        </p>
+        <div class="social-links">
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-dribbble"></i>
+          <i class="bx bxl-linkedin"></i>
+          <i class="bx bxl-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2024 Code Diggers, All Rights Reserved.</p>
+    </div>
+  </footer>
+ </body>
+</html>
