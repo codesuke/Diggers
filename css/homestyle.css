@@ -103,15 +103,33 @@ header .buttons button{
     padding: 8px;
     width: 140px;
     border-radius: 10px;
-    background-color: #777;
+    background-color: #2d6a4a;
     color: #fff;
     cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #38a169; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Optional: Add specific styles for the .see-all button */
+.see-all {
+    background-color: #e0e0e0;
+}
+
+.see-all:hover {
+    background-color: #1b4332; /* Darker green for .see-all on hover */
 }
 
 header .buttons button.see-all{
     background-color: #2d6a4f;
 }
-
+header .my-link {
+    color: white;
+  }
+header .my-link:hover {
+    color: white;
+  }
 header .search{
     position: relative;
     width: 30%;
@@ -135,6 +153,34 @@ header .search button{
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.item {
+    background-color: white; /* Default background color */
+    color: black; /* Default text color */
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.item:hover {
+    background-color: #2d6a4a; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+.item a {
+    color: inherit; /* Inherit the color from the parent */
+    text-decoration: none;
+}
+
+.item:hover a {
+    color: black; /* Ensure links also change to white on hover */
+}
+
+.item .price h5,
+.item .price p,
+.item .tag {
+    transition: color 0.3s; /* Smooth text color transition */
 }
 
 .content{
