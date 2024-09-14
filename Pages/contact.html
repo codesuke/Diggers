@@ -1,36 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/homestyle.css" />
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/homestyle.css" />
+    <title>Contact Us</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body and overall layout styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
 
+        /* Navigation Bar Styling */
+        navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-    <title>Contact Us | Diggers</title>
+        .logo img {
+            width: 50px;
+        }
+
+        .links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .buttons a {
+            margin-left: 15px;
+        }
+
+        /* Contact form container */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d6a4f;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .form-left, .form-right {
+            width: 80%;
+        }
+
+        .form-left h2 {
+            margin-bottom: 20px;
+            color: #168754;
+        }
+
+        .form-left input, .form-left textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-left button {
+            background-color: #2d6a4f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-left button:hover {
+            background-color: #168754;
+        }
+
+        .form-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.unsplash.com/photo-1543269664-3ef40b05c02c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            min-height: 300px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .contact-info div {
+            text-align: center;
+        }
+
+        .contact-info i {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2d6a4f;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col h5 {
+            margin-bottom: 20px;
+        }
+
+        .col a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .social-links i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-    <navigation>
-        <div class="left">
-            <div class="logo">
-                <img src="../assests/logo.png" /><a href="../home.html">
-                </a>
-            </div>
-            <div class="links">
-                <a href="../home.html">Home</a>
-                <a href="courses.html">Courses</a>
-                <a href="articles.html">Articles</a>
-                <a href="podcasts.html">Podcasts</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
 
+    <navigation>
+        <div class="logo">
+            <a href="home.html"><img src="../assests/logo.png" alt="Logo"></a>
+        </div>
+        <div class="links">
+            <a href="../home.html">Home</a>
+            <a href="pages/courses.html">Courses</a>
+            <a href="pages/articles.html">Articles</a>
+            <a href="Pages/podcasts.html">Podcasts</a>
+            <a href="Pages/about.html">About Us</a>
+            <a href="Pages/contact.html">Contact Us</a>
+        </div>
         <div class="buttons">
             <a href="#"><i class="bx bx-support"></i></a>
             <a href="pages/basket.html"><i class="bx bx-basket"></i></a>
@@ -38,68 +192,93 @@
         </div>
     </navigation>
 
-    <section class="contact">
-        <div class="content">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates ad in ut consequatur! Culpa ut
-                temporibus, voluptatem ipsum rerum esse iure magni suscipit. Sit.</p>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-us">
+            <div class="form-left">
+                
+                <label for="name">FULL NAME</label>
+                <input id="name" name="name" placeholder="Name" type="text" />
+                <label for="email">EMAIL ADDRESS</label>
+                <input id="email" name="email" placeholder="Email" type="email" />
+                <label for="subject">SUBJECT</label>
+                <input id="subject" name="subject" placeholder="Subject" type="text" />
+                <label for="message">MESSAGE</label>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+            <div class="form-right">
+                <!-- New background image applied directly to this div -->
+            </div>
         </div>
 
-    </section>
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div class="contact-info">
+            <div>
+                <i class="fab fa-instagram"></i>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com">instagram.com</a></p>
+            </div>
+            <div>
+                <i class="fab fa-twitter"></i>
+                <p><strong>Twitter:</strong> <a href="https://twitter.com">twitter.com</a></p>
+            </div>
+            <div>
+                <i class="fab fa-linkedin"></i>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com">linkedin.com</a></p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p><strong>Phone:</strong> <a href="tel:+1235235598">+ 1235 2355 98</a></p>
+            </div>
+            <div>
+                <i class="fas fa-paper-plane"></i>
+                <p><strong>Email:</strong> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            </div>
+            <div>
+                <i class="fas fa-globe"></i>
+                <p><strong>Website:</strong> <a href="http://yoursite.com">yoursite.com</a></p>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Type a message!</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-
+    </div>
     <footer>
         <div class="columns">
-            <div class="col">
-                <h5>Site Links</h5>
-                <a href="articles.html">Articles</a>
-                <a href="podcasts.html">Podcasts</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
+          <div class="col">
+            <h5>Site Links</h5>
+            <a href="Pages/articles.html">Articles</a>
+            <a href="Pages/podcasts.html">Podcasts</a>
+            <a href="Pages/about.html">About Us</a>
+            <a href="Pages/contact.html">Contact Us</a>
+          </div>
+          <div class="col">
+            <h5>Other Pages</h5>
+            <a href="#">404 Page</a>
+            <a href="login.html">Login|Register</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="col">
+            <h5>Collaboration</h5>
+            <a href="#">Work With Us</a>
+            <a href="#">Affiliate</a>
+            <a href="#">Support</a>
+          </div>
+          <div class="col last">
+            <h5>About Us</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ad
+              incidunt deleniti eligendi, vel quaerat a doloremque, quo id maiores
+              suscipit ex iste accusantium.
+            </p>
+            <div class="social-links">
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-dribbble"></i>
+              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-twitter"></i>
             </div>
-            <div class="col">
-                <h5>Other Pages</h5>
-                <a href="#">404 Page</a>
-                <a href="login.html">Login|Register</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <div class="col">
-                <h5>Collaboration</h5>
-                <a href="#">Work With Us</a>
-                <a href="#">Affiliate</a>
-                <a href="#">Support</a>
-            </div>
-            <div class="col last">
-                <h5>About Us</h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aperiam incidunt nisi ipsa vel
-                    placeat consequuntur doloremque doloribus. Modi doloremque perspiciatis molestiae.
-                </p>
-                <div class="social-links">
-                    <i class="bx bxl-instagram"></i>
-                    <i class="bx bxl-dribbble"></i>
-                    <i class="bx bxl-linkedin"></i>
-                    <i class="bx bxl-twitter"></i>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="copyright">
-            <p>Copyright © 2024 Code Diggers, All Rights Reserved.</p>
+          <p>Copyright © 2024 Code Diggers, All Rights Reserved.</p>
         </div>
-    </footer>
-
-
-</body>
-
-</html>
+      </footer>
+      
+      </html>
+    
