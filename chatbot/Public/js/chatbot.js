@@ -27,20 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
       sender === "user" ? "right" : "left"
     );
 
-    //Profile Pic
-
-    // const profilePic = document.createElement("img");
-    // profilePic.src =
-    //   sender === "user"
-    //     ? "https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-CQgEwG78NalJUICxdynhFkNN.png"
-    //     : "https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-25iU3djxMhq5yrjJpNdBxoyx.png";
-    // profilePic.alt =
-    //   sender === "user"
-    //     ? "Profile picture of Amy Jackson"
-    //     : "Profile picture of Steve Austin";
-    // profilePic.height = 40;
-    // profilePic.width = 40;
-
     const messageContent = document.createElement("div");
     const nameTag = document.createElement("p");
     nameTag.classList.add("name");
@@ -51,10 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     messageContent.appendChild(nameTag);
     messageContent.appendChild(messageText);
-    // messageElement.appendChild(profilePic);
     messageElement.appendChild(messageContent);
 
     chatMessages.appendChild(messageElement);
+
+    // Scroll to bottom after adding message
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 
@@ -63,6 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     loadingElement.classList.add("loading", "text-white", "self-start", "p-4");
     loadingElement.textContent = "Bot is typing...";
     chatMessages.appendChild(loadingElement);
+
+    // Scroll to bottom when showing loading
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 
