@@ -1,207 +1,91 @@
-<html></html>
- <head>
-  <title>
-   Chat Application
-  </title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-   body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #4a00e0, #8e2de2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            display: flex;
-            background-color: #1e90ff;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 70%;
-            max-width: 700px;
-            height: 85%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .chat-box {
-            flex: 3;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .message {
-            background-color: #4a90e2;
-            border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 10px;
-            color: white;
-            display: flex;
-            align-items: center;
-            max-width: 70%;
-        }
-        .message img {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-        .message p {
-            margin: 0;
-        }
-        .message .name {
-            font-weight: bold;
-        }
-        .message.left {
-            align-self: flex-start;
-        }
-        .message.right {
-            align-self: flex-end;
-            flex-direction: row-reverse;
-            margin-left: auto;
-        }
-        .message.right img {
-            margin-left: 10px;
-            margin-right: 0;
-        }
-        .friend-list {
-            flex: 1;
-            background-color: #4682b4;
-            padding: 20px;
-            color: white;
-        }
-        .friend-list h3 {
-            margin-top: 0;
-        }
-        .friend-list ul {
-            list-style: none;
-            padding: 0;
-        }
-        .friend-list li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .friend-list li .status {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .friend-list li .status.green {
-            background-color: #00ff00;
-        }
-        .friend-list li .status.red {
-            background-color: #ff0000;
-        }
-        .friend-list li .status.yellow {
-            background-color: #ffff00;
-        }
-        .input-box {
-            background-color: #4682b4;
-            padding: 10px;
-            border-top: 1px solid #1e90ff;
-            border-bottom-right-radius: 10px;
-            width: 94%;
-            margin-right: 6%;
-            display: flex;
-            align-items: center;
-        }
-        .input-box input {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-        }
-        .input-box button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-  </style>
- </head>
- <body>
-  <div class="container">
-   <div class="chat-box">
-    <div>
-     <div class="message left">
-      <img alt="Profile picture of Steve Austin" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-25iU3djxMhq5yrjJpNdBxoyx.png?st=2024-09-14T16%3A56%3A44Z&amp;se=2024-09-14T18%3A56%3A44Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A57%3A39Z&amp;ske=2024-09-14T23%3A57%3A39Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=1tTYMdDZHjcwReDnGE9OgqIXw71hqtSEWTzLnI/6nlI%3D" width="40"/>
-      <div>
-       <p class="name">
-        Steve Austin
-       </p>
-       <p>
-        I am waiting for your reply
-       </p>
-      </div>
-     </div>
-     <div class="message right" style="margin-left: auto;">
-      <img alt="Profile picture of Amy Jackson" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-CQgEwG78NalJUICxdynhFkNN.png?st=2024-09-14T16%3A56%3A43Z&amp;se=2024-09-14T18%3A56%3A43Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A10%3A09Z&amp;ske=2024-09-14T23%3A10%3A09Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=1M3fRrveH6sLifj5rrz8RLv7JMFn16JmczeR2kDHEXQ%3D" width="40"/>
-      <div>
-       <p class="name">
-        Amy Jackson
-       </p>
-       <p>
-        I would like to go for a morning walk from tomorrow onwards. You can also join me anytime.
-       </p>
-      </div>
-     </div>
-     <div class="message left">
-      <img alt="Profile picture of Steve Austin" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-25iU3djxMhq5yrjJpNdBxoyx.png?st=2024-09-14T16%3A56%3A44Z&amp;se=2024-09-14T18%3A56%3A44Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A57%3A39Z&amp;ske=2024-09-14T23%3A57%3A39Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=1tTYMdDZHjcwReDnGE9OgqIXw71hqtSEWTzLnI/6nlI%3D" width="40"/>
-      <div>
-       <p class="name">
-        Steve Austin
-       </p>
-       <p>
-        Great, I will be joining soon
-       </p>
-      </div>
-     </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/chatbox.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat-box">
+            <div>
+                <div class="message left">
+                    <img alt="Profile picture of Steve Austin" height="40"
+                        src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-25iU3djxMhq5yrjJpNdBxoyx.png?st=2024-09-14T16%3A56%3A44Z&amp;se=2024-09-14T18%3A56%3A44Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A57%3A39Z&amp;ske=2024-09-14T23%3A57%3A39Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=1tTYMdDZHjcwReDnGE9OgqIXw71hqtSEWTzLnI/6nlI%3D"
+                        width="40" />
+                    <div>
+                        <p class="name">
+                            Steve Austin
+                        </p>
+                        <p>
+                            I am waiting for your reply
+                        </p>
+                    </div>
+                </div>
+                <div class="message right" style="margin-left: auto;">
+                    <img alt="Profile picture of Amy Jackson" height="40"
+                        src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-CQgEwG78NalJUICxdynhFkNN.png?st=2024-09-14T16%3A56%3A43Z&amp;se=2024-09-14T18%3A56%3A43Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A10%3A09Z&amp;ske=2024-09-14T23%3A10%3A09Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=1M3fRrveH6sLifj5rrz8RLv7JMFn16JmczeR2kDHEXQ%3D"
+                        width="40" />
+                    <div>
+                        <p class="name">
+                            Amy Jackson
+                        </p>
+                        <p>
+                            I would like to go for a morning walk from tomorrow onwards. You can also join me anytime.
+                        </p>
+                    </div>
+                </div>
+                <div class="message left">
+                    <img alt="Profile picture of Steve Austin" height="40"
+                        src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-25iU3djxMhq5yrjJpNdBxoyx.png?st=2024-09-14T16%3A56%3A44Z&amp;se=2024-09-14T18%3A56%3A44Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A57%3A39Z&amp;ske=2024-09-14T23%3A57%3A39Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=1tTYMdDZHjcwReDnGE9OgqIXw71hqtSEWTzLnI/6nlI%3D"
+                        width="40" />
+                    <div>
+                        <p class="name">
+                            Steve Austin
+                        </p>
+                        <p>
+                            Great, I will be joining soon
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box" style="width: 94%; margin-right: 6%; border-bottom-right-radius: 10px;">
+                <input placeholder="Type your messages here..." type="text" style="border-radius: 5px;">
+                <button>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <div class="friend-list">
+            <h3>
+                Friend List
+            </h3>
+            <ul>
+                <li>
+                    <span class="status green"></span>
+                    Johny Austin
+                </li>
+                <li>
+                    <span class="status red"></span>
+                    Dwayne T
+                </li>
+                <li>
+                    <span class="status yellow"></span>
+                    Rey Mysterio
+                </li>
+                <li>
+                    <span class="status yellow"></span>
+                    Seth Rollins
+                </li>
+                <li>
+                    <span class="status yellow"></span>
+                    Roman Reigns
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="input-box" style="width: 94%; margin-right: 6%; border-bottom-right-radius: 10px;">
-     <input placeholder="Type your messages here..." type="text" style="border-radius: 5px;">
-     <button>
-      <i class="fas fa-paper-plane"></i>
-     </button>
-    </div>
-   </div>
-   <div class="friend-list">
-    <h3>
-     Friend List
-    </h3>
-    <ul>
-     <li>
-      <span class="status green">
-      </span>
-      Johny Austin
-     </li>
-     <li>
-      <span class="status red">
-      </span>
-      Dwayne T
-     </li>
-     <li>
-      <span class="status yellow">
-      </span>
-      Rey Mysterio
-     </li>
-     <li>
-      <span class="status yellow">
-      </span>
-      Seth Rollins
-     </li>
-     <li>
-      <span class="status yellow">
-      </span>
-      Roman Reigns
-     </li>
-    </ul>
-   </div>
-  </div>
- </body>
+</body>
+
 </html>

@@ -1,118 +1,138 @@
-*{
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #4a00e0, #8e2de2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.container {
-    display: flex;
-    background-color: #1e90ff;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 70%;
-    max-width: 700px;
-    height: 85%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.chat-box {
-    flex: 3;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.message {
-    background-color: #4a90e2;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: white;
-    display: flex;
-    align-items: center;
-    max-width: 70%;
-}
-.message img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-.message p {
-    margin: 0;
-}
-.message .name {
-    font-weight: bold;
-}
-.message.left {
-    align-self: flex-start;
-}
-.message.right {
-    align-self: flex-end;
-    flex-direction: row-reverse;
-    margin-left: auto;
-}
-.message.right img {
-    margin-left: 10px;
-    margin-right: 0;
-}
-.friend-list {
-    flex: 1;
-    background-color: #4682b4;
-    padding: 20px;
-    color: white;
-}
-.friend-list h3 {
-    margin-top: 0;
-}
-.friend-list ul {
-    list-style: none;
-    padding: 0;
-}
-.friend-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.friend-list li .status {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.friend-list li .status.green {
-    background-color: #00ff00;
-}
-.friend-list li .status.red {
-    background-color: #ff0000;
-}
-.friend-list li .status.yellow {
-    background-color: #ffff00;
-}
-.input-box {
-    background-color: #4682b4;
-    padding: 10px;
-    border-top: 1px solid #1e90ff;
-    border-bottom-right-radius: 10px;
-    width: 94%;
-    margin-right: 6%;
-    display: flex;
-    align-items: center;
-}
-.input-box input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-.input-box button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #cacbd8, #ffffff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        background-color: #34383b;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 70%;
+        max-width: 700px;
+        height: 85%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-box {
+        flex: 3;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .message {
+        background-color: #34383b;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        max-width: 70%;
+    }
+
+    .message img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .message p {
+        margin: 0;
+    }
+
+    .message .name {
+        font-weight: bold;
+    }
+
+    .message.left {
+        align-self: flex-start;
+    }
+
+    .message.right {
+        align-self: flex-end;
+        flex-direction: row-reverse;
+        margin-left: auto;
+    }
+
+    .message.right img {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .friend-list {
+        flex: 1;
+        background-color: #2a2b2c;
+        padding: 20px;
+        color: white;
+    }
+
+    .friend-list h3 {
+        margin-top: 0;
+    }
+
+    .friend-list ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .friend-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .friend-list li .status {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .friend-list li .status.green {
+        background-color: #00ff00;
+    }
+
+    .friend-list li .status.red {
+        background-color: #ff0000;
+    }
+
+    .friend-list li .status.yellow {
+        background-color: #ffff00;
+    }
+
+    .input-box {
+        background-color: #3f4041;
+        padding: 10px;
+        border-top: 1px solid #3f4041;
+        border-bottom-right-radius: 10px;
+        width: 94%;
+        margin-right: 6%;
+        display: flex;
+        align-items: center;
+    }
+
+    .input-box input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .input-box button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
