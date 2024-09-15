@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer Support</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/chatbox.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="chat-box">
-        <div class="flex-col chat-messages"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Support</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css/chatbox.css" />
+</head>
 
-        <div
-          class="input-box"
-          style="width: 94%; margin-right: 6%; border-bottom-right-radius: 10px"
-        >
-          <input
-            id="user-input"
-            placeholder="Type your messages here..."
-            type="text"
-            style="border-radius: 5px"
-          />
-          <button id="send-button">
-            <i class="fas fa-paper-plane"></i>
-          </button>
-        </div>
-      </div>
+<body>
+  <div class="container">
+    <div class="chat-box">
+      <div class="flex-col chat-messages"></div>
 
-      <div class="friend-list">
-        <h3>Friend List</h3>
-        <ul>
-          <li><span class="status green"></span> Johny Austin</li>
-          <li><span class="status red"></span> Dwayne T</li>
-          <li><span class="status yellow"></span> Rey Mysterio</li>
-          <li><span class="status yellow"></span> Seth Rollins</li>
-          <li><span class="status yellow"></span> Roman Reigns</li>
-        </ul>
+      <div class="input-box" style="width: 94%; margin-right: 6%; border-bottom-right-radius: 10px">
+        <input id="user-input" placeholder="Type your messages here..." type="text" style="border-radius: 5px" />
+        <button id="send-button">
+          <i class="fas fa-paper-plane"></i>
+        </button>
       </div>
     </div>
 
-    <script src="js/chatbot.js"></script>
-  </body>
+    <div class="friend-list">
+      <h3>Tickets</h3>
+      <ul>
+        <li><span class="status green"></span> Ticket #1</li>
+        <!-- <li><span class="status red"></span> Dwayne T</li>
+        <li><span class="status yellow"></span> Rey Mysterio</li>
+        <li><span class="status yellow"></span> Seth Rollins</li>
+        <li><span class="status yellow"></span> Roman Reigns</li> -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/chatbot.js"></script>
+</body>
+
 </html>
