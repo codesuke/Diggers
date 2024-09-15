@@ -1,0 +1,44 @@
+.course-panel:hover {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.course-panel:hover .text-gray-600 {
+    color: white;
+}
+
+.course-panel:hover .text-yellow-500 {
+    color: #ffdd57;
+}
+
+.course-panel:hover .bg-green-100 {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.btn-green {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #38a169;
+}
+
+.main-course-panel:hover .course-info {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.main-course-panel:hover .course-info .text-gray-600 {
+    color: white;
+}
+
+.main-course-panel:hover .course-info .text-yellow-500 {
+    color: #ffdd57;
+}
+
+.main-course-panel:hover .course-info .bg-green-100 {
+    background-color: #2d6a4f;
+    color: white;
+}

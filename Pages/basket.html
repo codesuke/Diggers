@@ -1,60 +1,23 @@
-<html></html>
- <head>
+<html>
+
+<head>
   <title>
-   Shopping Cart
+    Shopping Cart
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
-  <link
-  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" href="../CSS/homestyle.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   .course-panel:hover {
-    background-color: #2d6a4f;
-    color: white;
-   }
-   .course-panel:hover .text-gray-600 {
-    color: white;
-   }
-   .course-panel:hover .text-yellow-500 {
-    color: #ffdd57;
-   }
-   .course-panel:hover .bg-green-100 {
-    background-color: #2d6a4f;
-    color: white;
-   }
-   .btn-green {
-    background-color: #2d6a4f;
-    color: white;
-   }
-   .btn-green:hover {
-    background-color: #38a169;
-   }
-   .main-course-panel:hover .course-info {
-    background-color: #2d6a4f;
-    color: white;
-   }
-   .main-course-panel:hover .course-info .text-gray-600 {
-    color: white;
-   }
-   .main-course-panel:hover .course-info .text-yellow-500 {
-    color: #ffdd57;
-   }
-   .main-course-panel:hover .course-info .bg-green-100 {
-    background-color: #2d6a4f;
-    color: white;
-   }
-  </style>
- </head>
- <body class="bg-gray-100">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/homestyle.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/basket.css">
+</head>
+
+<body class="bg-gray-100">
   <navigation>
     <div class="left">
       <div class="logo"><a href="../home.html">
-        <img src="../assests/logo.png" />
-      </a></div>
+          <img src="../assests/logo.png" />
+        </a></div>
       <div class="links">
         <a href="../home.html">Home</a>
         <a href="courses.html">Courses</a>
@@ -72,214 +35,220 @@
     </div>
   </navigation>
   <div class="max-w-6xl mx-auto p-6">
-   <h1 class="text-3xl font-bold mb-6">
-    Shopping Cart
-   </h1>
-   <div class="bg-white p-6 rounded-lg shadow-md mb-6 main-course-panel">
-    <div class="flex items-center mb-4 course-info p-4 rounded-lg">
-     <img alt="Calculus course image" class="w-24 h-24 rounded-lg mr-4" height="100" src="../assests/course-1.jpg" width="100"/>
-     <div>
-      <h2 class="text-xl font-bold"><a href ="preview-1.html">
-       Learn Calculus with Assignments
-      </a></h2>
-      <p class="text-gray-600">
-       By Dr. Chirayush Verma, PhD Mathematics
-      </p>
-      <div class="flex items-center mt-2">
-       <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
-        Bestseller
-       </span>
-       <span class="text-yellow-500">
-        <i class="fas fa-star">
-        </i>
-        4.7
-       </span>
-       <span class="text-gray-600 ml-2">
-        (401,130 ratings)
-       </span>
+    <h1 class="text-3xl font-bold mb-6">
+      Shopping Cart
+    </h1>
+    <div class="bg-white p-6 rounded-lg shadow-md mb-6 main-course-panel">
+      <div class="flex items-center mb-4 course-info p-4 rounded-lg">
+        <img alt="Calculus course image" class="w-24 h-24 rounded-lg mr-4" height="100" src="../assests/course-1.jpg"
+          width="100" />
+        <div>
+          <h2 class="text-xl font-bold"><a href="preview-1.html">
+              Learn Calculus with Assignments
+            </a></h2>
+          <p class="text-gray-600">
+            By Dr. Chirayush Verma, PhD Mathematics
+          </p>
+          <div class="flex items-center mt-2">
+            <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+              Bestseller
+            </span>
+            <span class="text-yellow-500">
+              <i class="fas fa-star">
+              </i>
+              4.7
+            </span>
+            <span class="text-gray-600 ml-2">
+              (401,130 ratings)
+            </span>
+          </div>
+          <p class="text-gray-600 mt-2">
+            61.5 total hours • 373 lectures • All Levels
+          </p>
+        </div>
       </div>
-      <p class="text-gray-600 mt-2">
-       61.5 total hours • 373 lectures • All Levels
-      </p>
-     </div>
+      <div class="flex justify-between items-center">
+        <p class="text-2xl font-bold">
+          ₹3,099
+        </p>
+        <div class="text-right">
+          <a class="text-blue-500 hover:underline" href="#">
+            Remove
+          </a>
+          <br />
+          <a class="text-blue-500 hover:underline" href="#">
+            Save for Later
+          </a>
+          <br />
+          <a class="text-blue-500 hover:underline" href="#">
+            Move to Wishlist
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-between items-center">
-     <p class="text-2xl font-bold">
-      ₹3,099
-     </p>
-     <div class="text-right">
-      <a class="text-blue-500 hover:underline" href="#">
-       Remove
-      </a>
-      <br/>
-      <a class="text-blue-500 hover:underline" href="#">
-       Save for Later
-      </a>
-      <br/>
-      <a class="text-blue-500 hover:underline" href="#">
-       Move to Wishlist
-      </a>
-     </div>
+    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <div class="flex justify-between items-center">
+        <div>
+          <h2 class="text-xl font-bold mb-4">
+            Total:
+          </h2>
+          <p class="text-3xl font-bold mb-4">
+            ₹3,099
+          </p>
+        </div>
+        <button class="btn-green px-6 py-2 rounded-lg">
+          Checkout
+        </button>
+      </div>
     </div>
-   </div>
-   <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-    <div class="flex justify-between items-center">
-     <div>
+    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
       <h2 class="text-xl font-bold mb-4">
-       Total:
+        Promotions
       </h2>
-      <p class="text-3xl font-bold mb-4">
-       ₹3,099
-      </p>
-     </div>
-     <button class="btn-green px-6 py-2 rounded-lg">
-      Checkout
-     </button>
+      <div class="flex">
+        <input class="border border-gray-300 p-2 rounded-lg flex-grow mr-2" placeholder="Enter Coupon" type="text" />
+        <button class="btn-green px-6 py-2 rounded-lg">
+          Apply
+        </button>
+      </div>
     </div>
-   </div>
-   <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-    <h2 class="text-xl font-bold mb-4">
-     Promotions
-    </h2>
-    <div class="flex">
-     <input class="border border-gray-300 p-2 rounded-lg flex-grow mr-2" placeholder="Enter Coupon" type="text"/>
-     <button class="btn-green px-6 py-2 rounded-lg">
-      Apply
-     </button>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-bold mb-4">
+        You might also like
+      </h2>
+      <div class="grid grid-cols-5 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-md course-panel">
+          <img alt="Algebra course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100"
+            src="../assests/course-2.jpg" width="100" />
+          <h3 class="text-lg font-bold"><a href="preview-2.html">
+              Learn Algebra with Assignments</a>
+          </h3>
+          <p class="text-gray-600">
+            Sakshi Mishra
+          </p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">
+              <i class="fas fa-star">
+              </i>
+              4.7
+            </span>
+            <span class="text-gray-600 ml-2">
+              (212,325)
+            </span>
+          </div>
+          <p class="text-2xl font-bold mt-2">
+            ₹3,699
+          </p>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+            Bestseller
+          </span>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md course-panel">
+          <img alt="Martial Arts course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100"
+            src="../assests/course-3.jpg" width="100" />
+          <h3 class="text-lg font-bold"><a href="preview-3.html">
+              Learn Martial Arts</a>
+          </h3>
+          <p class="text-gray-600">
+            Devansh Manchanda
+          </p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">
+              <i class="fas fa-star">
+              </i>
+              4.5
+            </span>
+            <span class="text-gray-600 ml-2">
+              (189,561)
+            </span>
+          </div>
+          <p class="text-2xl font-bold mt-2">
+            ₹3,699
+          </p>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+            Bestseller
+          </span>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md course-panel">
+          <img alt="Business Analytics course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100"
+            src="../assests/course-4.jpg" width="100" />
+          <h3 class="text-lg font-bold"><a href="preview-4.html">
+              Learn Bussiness Analytics</a>
+          </h3>
+          <p class="text-gray-600">
+            Ishaan Goel
+          </p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">
+              <i class="fas fa-star">
+              </i>
+              4.7
+            </span>
+            <span class="text-gray-600 ml-2">
+              (91,686)
+            </span>
+          </div>
+          <p class="text-2xl font-bold mt-2">
+            ₹4,499
+          </p>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+            Bestseller
+          </span>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md course-panel">
+          <img alt="Computer Science course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100"
+            src="../assests/course-5.jpg" width="100" />
+          <h3 class="text-lg font-bold"><a href="preview-5.html">
+              Learn Computer Science with Projects</a>
+          </h3>
+          <p class="text-gray-600">
+            Chirayush Verma
+          </p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">
+              <i class="fas fa-star">
+              </i>
+              4.7
+            </span>
+            <span class="text-gray-600 ml-2">
+              (275,520)
+            </span>
+          </div>
+          <p class="text-2xl font-bold mt-2">
+            ₹3,099
+          </p>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+            Bestseller
+          </span>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md course-panel">
+          <img alt="Physics course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100"
+            src="../assests/course-6.jpg" width="100" />
+          <h3 class="text-lg font-bold"><a href="preview-6.html">
+              Learn Physics with Assignments</a>
+          </h3>
+          <p class="text-gray-600">
+            Devansh Manchanda
+          </p>
+          <div class="flex items-center mt-2">
+            <span class="text-yellow-500">
+              <i class="fas fa-star">
+              </i>
+              4.6
+            </span>
+            <span class="text-gray-600 ml-2">
+              (200,283)
+            </span>
+          </div>
+          <p class="text-2xl font-bold mt-2">
+            ₹3,699
+          </p>
+          <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
+            Bestseller
+          </span>
+        </div>
+      </div>
     </div>
-   </div>
-   <div class="bg-white p-6 rounded-lg shadow-md">
-    <h2 class="text-xl font-bold mb-4">
-     You might also like
-    </h2>
-    <div class="grid grid-cols-5 gap-4">
-     <div class="bg-white p-4 rounded-lg shadow-md course-panel">
-      <img alt="Algebra course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100" src="../assests/course-2.jpg" width="100"/>
-      <h3 class="text-lg font-bold"><a href="preview-2.html">
-       Learn Algebra with Assignments</a>
-      </h3>
-      <p class="text-gray-600">
-       Sakshi Mishra
-      </p>
-      <div class="flex items-center mt-2">
-       <span class="text-yellow-500">
-        <i class="fas fa-star">
-        </i>
-        4.7
-       </span>
-       <span class="text-gray-600 ml-2">
-        (212,325)
-       </span>
-      </div>
-      <p class="text-2xl font-bold mt-2">
-       ₹3,699
-      </p>
-      <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-       Bestseller
-      </span>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md course-panel">
-      <img alt="Martial Arts course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100" src="../assests/course-3.jpg" width="100"/>
-      <h3 class="text-lg font-bold"><a href ="preview-3.html">
-       Learn Martial Arts</a>
-      </h3>
-      <p class="text-gray-600">
-       Devansh Manchanda
-      </p>
-      <div class="flex items-center mt-2">
-       <span class="text-yellow-500">
-        <i class="fas fa-star">
-        </i>
-        4.5
-       </span>
-       <span class="text-gray-600 ml-2">
-        (189,561)
-       </span>
-      </div>
-      <p class="text-2xl font-bold mt-2">
-       ₹3,699
-      </p>
-      <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-       Bestseller
-      </span>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md course-panel">
-      <img alt="Business Analytics course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100" src="../assests/course-4.jpg" width="100"/>
-      <h3 class="text-lg font-bold"><a href="preview-4.html">
-       Learn Bussiness Analytics</a>
-      </h3>
-      <p class="text-gray-600">
-       Ishaan Goel
-      </p>
-      <div class="flex items-center mt-2">
-       <span class="text-yellow-500">
-        <i class="fas fa-star">
-        </i>
-        4.7
-       </span>
-       <span class="text-gray-600 ml-2">
-        (91,686)
-       </span>
-      </div>
-      <p class="text-2xl font-bold mt-2">
-       ₹4,499
-      </p>
-      <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-       Bestseller
-      </span>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md course-panel">
-      <img alt="Computer Science course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100" src="../assests/course-5.jpg" width="100"/>
-      <h3 class="text-lg font-bold"><a href = "preview-5.html">
-       Learn Computer Science with Projects</a>
-      </h3>
-      <p class="text-gray-600">
-       Chirayush Verma
-      </p>
-      <div class="flex items-center mt-2">
-       <span class="text-yellow-500">
-        <i class="fas fa-star">
-        </i>
-        4.7
-       </span>
-       <span class="text-gray-600 ml-2">
-        (275,520)
-       </span>
-      </div>
-      <p class="text-2xl font-bold mt-2">
-       ₹3,099
-      </p>
-      <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-       Bestseller
-      </span>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow-md course-panel">
-      <img alt="Physics course image" class="w-full h-32 object-cover rounded-lg mb-4" height="100" src="../assests/course-6.jpg" width="100"/>
-      <h3 class="text-lg font-bold"><a href = "preview-6.html">
-       Learn Physics with Assignments</a>
-      </h3>
-      <p class="text-gray-600">
-       Devansh Manchanda
-      </p>
-      <div class="flex items-center mt-2">
-       <span class="text-yellow-500">
-        <i class="fas fa-star">
-        </i>
-        4.6
-       </span>
-       <span class="text-gray-600 ml-2">
-        (200,283)
-       </span>
-      </div>
-      <p class="text-2xl font-bold mt-2">
-       ₹3,699
-      </p>
-      <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-       Bestseller
-      </span>
-     </div>
-    </div>
-   </div>
   </div>
   <footer>
     <div class="columns">
@@ -321,5 +290,6 @@
       <p>Copyright © 2024 Code Diggers, All Rights Reserved.</p>
     </div>
   </footer>
- </body>
+</body>
+
 </html>

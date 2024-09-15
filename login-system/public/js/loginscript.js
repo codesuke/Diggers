@@ -71,7 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (data.token) {
         localStorage.setItem('token', data.token);
         alert('Login successful!');
-        window.location.href = '/dashboard'; // Ensure this route exists
+        
+        // Redirect to previous URL or home.html
+        const previousUrl = localStorage.getItem('previousUrl');
+        localStorage.removeItem('previousUrl'); // Clean up
+        window.location.href = previousUrl || '../../../home.html';
       } else {
         alert(data.msg);
       }

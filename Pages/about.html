@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../CSS/homestyle.css" />
-  <title>Document</title>
+  <title>About Us</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/about.css">
 </head>
 
 <body>
   <navigation>
     <div class="left">
       <div class="logo">
-        <a href="../home.html"></a><img src="../assests/logo.png" />
+        <a href="../home.html">
+          <img src="../assests/logo.png" alt="Logo" />
         </a>
       </div>
       <div class="links">
@@ -32,245 +35,95 @@
       <a href="login.html"><i class="bx bx-user"></i></a>
     </div>
   </navigation>
-  
-  <head>
-    <title>
-      About Us Page
-    </title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      .header {
-        background-color: #2d6a4f;
-        color: white;
-        padding: 60px;
-        text-align: center;
-      }
+  <div class="header">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p class="note">Resize the browser window to see that this page is responsive.</p>
+  </div>
 
-      .header h1 {
-        margin: 0;
-        font-size: 36px;
-      }
-
-      .header p {
-        margin: 10px 0 0;
-        font-size: 18px;
-      }
-
-      .header .note {
-        margin-top: 20px;
-        color: #b0b0b0;
-      }
-
-      .team-section {
-        padding: 50px;
-        text-align: center;
-      }
-
-      .team-section h2 {
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-
-      .team-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-
-      .team-member {
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        width: 300px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        transition: background-color 0.3s ease;
-      }
-
-      .team-member:hover {
-        background-color: #2d6a4f;
-        color: white;
-      }
-
-      .team-member img {
-        width: 100%;
-        height: auto;
-      }
-
-      .team-member .info {
-        padding: 20px;
-        text-align: left;
-      }
-
-      .team-member .info h3 {
-        margin: 0;
-        font-size: 22px;
-      }
-
-      .team-member .info h4 {
-        margin: 10px 0;
-        color: #888;
-        font-size: 18px;
-      }
-
-      .team-member .info p {
-        margin: 10px 0;
-        font-size: 16px;
-      }
-
-      .team-member .info .email {
-        color: #333;
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="header" style="">
-      <h1 style="">
-        About Us Page
-      </h1>
-      <p style="">
-        Some text about who we are and what we do.
-      </p>
-      <p class="note" style="">
-        Resize the browser window to see that this page is responsive by the way.
-      </p>
-    </div>
-    <div class="team-section">
-      <h2>
-        Our Team
-      </h2>
-      <div class="team-container">
-        <div class="team-member">
-          <img alt="Portrait of Sakshi Mishra, CEO &amp; Founder" height="300"
-            src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-rD9guzXwh7MTgfeuoqa3i669.png?st=2024-09-14T05%3A13%3A38Z&amp;se=2024-09-14T07%3A13%3A38Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-13T23%3A04%3A07Z&amp;ske=2024-09-14T23%3A04%3A07Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=IQN9d2lcD72rXli%2BX%2BsJihmZc8J1sqG5WRwvyPkCv98%3D"
-            width="300" />
-          <div class="info">
-            <h3 style="">
-              Sakshi Mishra
-            </h3>
-            <h4 style="">
-              CEO &amp; Founder
-            </h4>
-            <p>
-              Some text that describes me lorem ipsum ipsum lorem.
-            </p>
-            <p class="email">
-              jane@example.com
-            </p>
-          </div>
+  <div class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <img alt="Portrait of Sakshi Mishra, CEO & Founder" height="300" src="../assests/Sakshi.jpg" width="300" />
+        <div class="info">
+          <h3>Sakshi Mishra</h3>
+          <h4>Design Head</h4>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="email">jane@example.com</p>
         </div>
-        <div class="team-member">
-          <img alt="Portrait of Chirayush Verma, Art Director" height="300"
-            src=""
-            width="300" />
-          <div class="info">
-            <h3>
-              Chirayush Verma
-            </h3>
-            <h4>
-              Art Director
-            </h4>
-            <p>
-              Some text that describes me lorem ipsum ipsum lorem.
-            </p>
-            <p class="email">
-              mike@example.com
-            </p>
-          </div>
+      </div>
+      <div class="team-member">
+        <img alt="Portrait of Chirayush Verma, Art Director" height="300" src="../assests/codesuke.jpg" width="300" />
+        <div class="info">
+          <h3>Chirayush Verma</h3>
+          <h4>Tech/Team Lead</h4>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="email">mike@example.com</p>
         </div>
-        <div class="team-member">
-          <img alt="Portrait of Ishaan Goel, Designer" height="300"
-            src=""
-            width="300" />
-          <div class="info">
-            <h3>
-              Ishaan Goel
-            </h3>
-            <h4>
-              Designer
-            </h4>
-            <p>
-              Some text that describes me lorem ipsum ipsum lorem.
-            </p>
-            <p class="email">
-              john@example.com
-            </p>
-          </div>
+      </div>
+      <div class="team-member">
+        <img alt="Portrait of Ishaan Goel, Designer" height="300" src="../assests/Ishaan.jpg" width="300" />
+        <div class="info">
+          <h3>Ishaan Goel</h3>
+          <h4>Frontend Dev</h4>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="email">john@example.com</p>
         </div>
-        <div class="team-member">
-          <img alt="Portrait of Devansh Manchanda, Designer" height="300"
-            src=""
-            width="300" />
-          <div class="info">
-            <h3>
-              Devansh Manchanda
-            </h3>
-            <h4>
-              Designer
-            </h4>
-            <p>
-              Some text that describes me lorem ipsum ipsum lorem.
-            </p>
-            <p class="email">
-              john@example.com
-            </p>
-          </div>
+      </div>
+      <div class="team-member">
+        <img alt="Portrait of Devansh Manchanda, Designer" height="300" src="../assests/Devansh.jpg" width="300" />
+        <div class="info">
+          <h3>Devansh Manchanda</h3>
+          <h4>Backend Dev</h4>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p class="email">john@example.com</p>
         </div>
       </div>
     </div>
-  </body>
+  </div>
 
-</html>
-<footer>
-  <div class="columns">
-    <div class="col">
-      <h5>Site Links</h5>
-      <a href="articles.html">Articles</a>
-      <a href="podcasts.html">Podcasts</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-    <div class="col">
-      <h5>Other Pages</h5>
-      <a href="#">404 Page</a>
-      <a href="login.html">Login|Register</a>
-      <a href="#">Privacy Policy</a>
-    </div>
-    <div class="col">
-      <h5>Collaboration</h5>
-      <a href="#">Work With Us</a>
-      <a href="#">Affiliate</a>
-      <a href="#">Support</a>
-    </div>
-    <div class="col last">
-      <h5>About Us</h5>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ad
-        incidunt deleniti eligendi, vel quaerat a doloremque, quo id maiores
-        suscipit ex iste accusantium.
-      </p>
-      <div class="social-links">
-        <i class="bx bxl-instagram"></i>
-        <i class="bx bxl-dribbble"></i>
-        <i class="bx bxl-linkedin"></i>
-        <i class="bx bxl-twitter"></i>
+  <footer>
+    <div class="columns">
+      <div class="col">
+        <h5>Site Links</h5>
+        <a href="articles.html">Articles</a>
+        <a href="podcasts.html">Podcasts</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="col">
+        <h5>Other Pages</h5>
+        <a href="#">404 Page</a>
+        <a href="login.html">Login|Register</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="col">
+        <h5>Collaboration</h5>
+        <a href="#">Work With Us</a>
+        <a href="#">Affiliate</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="col last">
+        <h5>About Us</h5>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ad incidunt deleniti eligendi, vel quaerat a
+          doloremque, quo id maiores suscipit ex iste accusantium.
+        </p>
+        <div class="social-links">
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-dribbble"></i>
+          <i class="bx bxl-linkedin"></i>
+          <i class="bx bxl-twitter"></i>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="copyright">
-    <p>Copyright © 2024 Code Diggers, All Rights Reserved.</p>
-  </div>
-</footer>
+    <div class="copyright">
+      <p>Copyright © 2024 Code Diggers, All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
 
 </html>
